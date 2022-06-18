@@ -42,7 +42,7 @@ nav {
 
 /* intro part  */
 .intro{
-    background: #3264BF;
+    background: #1949A5;
     padding:  5% 10%;
     color: #FEFEFE;
 }
@@ -68,7 +68,7 @@ a:hover {
 
 
 /* media query   for mobile*/
-@media only screen and (max-width: 325px) {
+@media only screen and (max-width: 500px) {
   .hero {
     height: 50vh;
     background-position: center;
