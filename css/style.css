@@ -15,6 +15,9 @@
 .color {
   color: #131921;
 }
+.pcolor{
+  color: #062e85;
+}
 a {
   font-size: 16px !important;
   font-weight: 900 !important;
@@ -270,7 +273,12 @@ transform: translateY(-10px);
   cursor: pointer;
 }
 
-
+.services{
+  /* box-shadow: 20px 20px 20px  #fff1; */
+  padding: 20px 30px;
+  border-radius: 20px;
+  border: 2px solid #062e85;
+}
 
 /* media query   for mobile*/
 @media only screen and (max-width: 500px) {
@@ -298,6 +306,9 @@ transform: translateY(-10px);
 
   .input {
     width: 100%;
+  }
+  .services{
+  margin:0 10px;
   }
  
 }
