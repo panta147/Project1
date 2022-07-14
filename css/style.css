@@ -128,8 +128,7 @@ nav {
   right: 0;
   background: #fff;
   width: 100%;
-
-
+  box-shadow: 1px 1px 10px #1949a5;
 }
 .sicon {
   font-weight: bold;
@@ -266,22 +265,58 @@ transform: translateY(-10px);
   width: 100%;
   color: #fff;
 }
-
 .footerlist>li>a {
   color: #deddd9 !important;
   text-decoration: none;
   cursor: pointer;
+  text-align:left;
+  margin-left: -30px;
 }
 
+.footerp{
+  text-align:left;
+}
+.rows{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
 .services{
-  /* box-shadow: 20px 20px 20px  #fff1; */
+  cursor: pointer;
   padding: 20px 30px;
   border-radius: 20px;
   border: 2px solid #062e85;
+  width: 40%;
+  margin: 20px 10px;
 }
-
+/* blog  */
+.blogcontain{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8vw;
+  margin-top: 20px;
+}
+.blogcontain .blog{
+  width: 60%;
+}
+.blogcontain .blog img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.blogcontain .category{
+  width: 35%;
+  /* text-align: center; */
+}
+.collegelist li a{
+  color: #0008 !important;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 /* media query   for mobile*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 525px) {
   .hero {
     height: 50vh;
     background-position: center;
@@ -310,5 +345,32 @@ transform: translateY(-10px);
   .services{
   margin:0 10px;
   }
- 
+  .cart{
+width: 80%;
+margin: 20px auto;
+  }
+  .rows{
+    justify-content:center;
+    flex-direction: column;
+  }
+  .services{
+    padding: 10px 20px;
+    width: 95%;
+    margin: 15px auto;
+  }
+  /* blog  */
+.blogcontain{
+flex-direction: column;
+  padding: 2vw;
+}
+.blogcontain .blog{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blogcontain .category{
+  width: 80%;
+  margin: 0 auto;
+
+}
 }
